@@ -3,19 +3,22 @@ import {
     WelcomeContainer,
     WelcomeTitle,
     WelcomeText,
+    WelcomeSubtitle,
     FeatureList
 } from './WelcomeDemo.styles';
 
 const WelcomeDemo = (): JSX.Element => {
     return (
         <WelcomeContainer>
-            <WelcomeTitle>Welcome to React 19 Playground</WelcomeTitle>
+            <WelcomeTitle>
+                Welcome to <span className="react-highlight">React 19</span>
+            </WelcomeTitle>
             <WelcomeText>
                 This playground is designed to help you explore and demonstrate the new features in React 19.
                 Use the navigation sidebar to explore different feature categories.
             </WelcomeText>
             
-            <WelcomeText>Ready-to-explore categories:</WelcomeText>
+            <WelcomeSubtitle>Ready-to-explore categories:</WelcomeSubtitle>
             <FeatureList>
                 <li><strong>Hooks:</strong> New and improved React hooks</li>
                 <li><strong>Components:</strong> Enhanced component features</li>
