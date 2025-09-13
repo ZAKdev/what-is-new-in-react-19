@@ -7,6 +7,7 @@ import MainContent from './components/layout/MainContent';
 import WelcomeDemo from './components/demos/WelcomeDemo';
 import PlaceholderDemo from './components/demos/PlaceholderDemo';
 import DocumentMetaData from './components/demos/DocumentMetaData';
+import UseActionState from './components/demos/UseActionState';
 import { DemoItem } from './types';
 import { AppContainer } from './App.styles';
 
@@ -20,6 +21,11 @@ const demoItems: DemoItem[] = [
         id: 'meta-data',
         title: 'Document Meta Data',
         component: () => <DocumentMetaData title='Hello everyone' />,
+    },
+    {
+        id: 'action-state',
+        title: 'useActionState',
+        component: () => <UseActionState />,
     },
     {
         id: 'use-hook',

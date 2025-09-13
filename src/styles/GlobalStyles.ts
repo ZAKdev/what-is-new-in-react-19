@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -12,11 +12,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: ${props => props.theme.typography.fontFamily};
-    font-size: ${props => props.theme.typography.fontSize.md};
+    font-family: ${(props) => props.theme.typography.fontFamily};
+    font-size: ${(props) => props.theme.typography.fontSize.md};
     line-height: 1.5;
-    color: ${props => props.theme.colors.text};
-    background-color: ${props => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
+    background-color: ${(props) => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -28,26 +28,26 @@ export const GlobalStyles = createGlobalStyle`
   code {
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
     font-size: 0.9em;
-    background-color: ${props => props.theme.colors.surface};
+    background-color: ${(props) => props.theme.colors.surface};
     padding: 2px 4px;
-    border-radius: ${props => props.theme.borderRadius.sm};
+    border-radius: ${(props) => props.theme.borderRadius.sm};
   }
 
   pre {
-    background-color: ${props => props.theme.colors.surface};
-    padding: ${props => props.theme.spacing.md};
-    border-radius: ${props => props.theme.borderRadius.md};
+    background-color: ${(props) => props.theme.colors.surface};
+    padding: ${(props) => props.theme.spacing.md};
+    border-radius: ${(props) => props.theme.borderRadius.md};
     overflow-x: auto;
-    margin: ${props => props.theme.spacing.md} 0;
+    margin: ${(props) => props.theme.spacing.md} 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin-bottom: ${props => props.theme.spacing.md};
-    font-weight: ${props => props.theme.typography.fontWeight.semiBold};
+    margin-bottom: ${(props) => props.theme.spacing.md};
+    font-weight: ${(props) => props.theme.typography.fontWeight.semiBold};
   }
 
   p {
-    margin-bottom: ${props => props.theme.spacing.md};
+    margin-bottom: ${(props) => props.theme.spacing.md};
   }
 
   button {
@@ -55,10 +55,11 @@ export const GlobalStyles = createGlobalStyle`
     border: none;
     background: none;
     font-family: inherit;
+    color: ${(props) => props.theme.colors.text};
   }
 
   a {
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
     text-decoration: none;
 
     &:hover {
