@@ -6,8 +6,8 @@ import Navigation from './components/layout/Navigation';
 import MainContent from './components/layout/MainContent';
 import WelcomeDemo from './components/demos/WelcomeDemo';
 import DocumentMetaData from './components/demos/DocumentMetaData/DocumentMetaData';
-import UseActionState from './components/demos/useActionState/UseActionState';
-import OldFormSubmission from './components/demos/useActionState/OldFormSubmission';
+import UseActionState from './components/demos/actions/UseActionState';
+import OptimisticComp from './components/demos/OptimisticComp/OptimisticComp';
 import { DemoItem } from './types';
 import { AppContainer } from './App.styles';
 
@@ -21,6 +21,11 @@ const demoItems: DemoItem[] = [
         id: 'action-state',
         title: 'useActionState',
         component: () => <UseActionState />,
+    },
+    {
+        id: 'optimistic-comp',
+        title: 'useOptimistic',
+        component: () => <OptimisticComp />,
     },
     {
         id: 'meta-data',
