@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DemoContainer = styled.div`
     max-width: 1200px;
@@ -18,12 +18,12 @@ export const PerformanceIndicator = styled.div`
 `;
 
 export const CompilerIndicator = styled.div`
-    background: ${(props) => props.theme.colors.primary}20;
-    border: 2px solid ${(props) => props.theme.colors.primary};
+    background: ${props => props.theme.colors.primary}20;
+    border: 2px solid ${props => props.theme.colors.primary};
     border-radius: 6px;
     padding: 10px;
     margin-top: 10px;
     font-size: 14px;
     font-style: italic;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${props => props.theme.colors.primary};
 `;
