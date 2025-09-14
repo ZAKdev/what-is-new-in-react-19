@@ -10,7 +10,7 @@ import UseActionState from './components/demos/actions/UseActionState';
 import LikeComp from './components/demos/OptimisticComp/LikeComp';
 import PasswordChange from './components/demos/OptimisticComp/PasswordChange';
 import UsersList from './components/demos/useApi/UsersList';
-import OldUsersList from './components/demos/useApi/OldUsersList';
+import UseContext from './components/demos/useApi/UseContext';
 import { DemoItem } from './types';
 import { AppContainer } from './App.styles';
 
@@ -36,7 +36,7 @@ const demoItems: DemoItem[] = [
         ),
     },
     {
-        id: 'use-api',
+        id: 'use-api-1',
         title: 'use - withPromise',
         component: () => (
             <div>
