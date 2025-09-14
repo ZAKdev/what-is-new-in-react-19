@@ -7,6 +7,8 @@ import MainContent from './components/layout/MainContent';
 import WelcomeDemo from './components/demos/WelcomeDemo';
 import DocumentMetaData from './components/demos/DocumentMetaData/DocumentMetaData';
 import UseActionState from './components/demos/actions/UseActionState';
+import FormActions from './components/demos/actions/FormActions';
+import SuspensePreloadDemo from './components/demos/suspense/SuspensePreloadDemo';
 import LikeComp from './components/demos/OptimisticComp/LikeComp';
 import PasswordChange from './components/demos/OptimisticComp/PasswordChange';
 import UsersList from './components/demos/useApi/UsersList';
@@ -25,6 +27,16 @@ const demoItems: DemoItem[] = [
         id: 'action-state',
         title: 'useActionState',
         component: () => <UseActionState />,
+    },
+    {
+        id: 'form-actions',
+        title: 'Form Actions',
+        component: () => <FormActions />,
+    },
+    {
+        id: 'suspense-preload',
+        title: 'preinit()',
+        component: () => <SuspensePreloadDemo />,
     },
     {
         id: 'optimistic-comp',
