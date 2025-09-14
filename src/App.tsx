@@ -11,6 +11,7 @@ import LikeComp from './components/demos/OptimisticComp/LikeComp';
 import PasswordChange from './components/demos/OptimisticComp/PasswordChange';
 import UsersList from './components/demos/useApi/UsersList';
 import RefsComp from './components/demos/others/RefsComp';
+import DeferredSearch from './components/demos/others/DeferredSearch';
 import { DemoItem } from './types';
 import { AppContainer } from './App.styles';
 
@@ -50,6 +51,15 @@ const demoItems: DemoItem[] = [
         component: () => (
             <div>
                 <RefsComp />
+            </div>
+        ),
+    },
+    {
+        id: 'deferred-value',
+        title: 'useDeferredValue',
+        component: () => (
+            <div>
+                <DeferredSearch />
             </div>
         ),
     },
