@@ -1,7 +1,7 @@
 import { JSX, useState } from 'react';
 import { preinit } from 'react-dom';
 
-const SuspensePreloadDemo = (): JSX.Element => {
+const PreinitDemo = (): JSX.Element => {
     const [fontLoaded, setFontLoaded] = useState(false);
 
     const handlePreloadFont = () => {
@@ -34,4 +34,4 @@ const SuspensePreloadDemo = (): JSX.Element => {
     );
 };
 
-export default SuspensePreloadDemo;
+export default PreinitDemo;
