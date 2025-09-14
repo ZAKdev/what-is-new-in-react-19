@@ -32,7 +32,7 @@ const UseActionState = (): JSX.Element => {
                 </form>
             </div>
             {state && (
-                <div className="alert alert-success">
+                <div className="alert alert-info">
                     <strong>Submitted:</strong> {state}
                 </div>
             )}

@@ -20,15 +20,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "latest",
+    "react-dom": "latest",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
     "@stylistic/eslint-plugin": "^5.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "css-loader": "^7.1.2",
     "eslint": "^9.27.0",
     "eslint-plugin-react": "^7.37.5",
