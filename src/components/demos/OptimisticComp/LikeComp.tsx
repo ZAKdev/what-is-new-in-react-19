@@ -1,23 +1,16 @@
-import { JSX, useOptimistic, useState, startTransition } from 'react';
+import { JSX, useOptimistic, useState } from 'react';
 
-const OptimisticComp = (): JSX.Element => {
+const LikeComp = (): JSX.Element => {
     const [isLiked, setIsLiked] = useState(false);
-
-    const [optimisticLiked, setOptimisticLiked] = useOptimistic(
-        isLiked,
-        (currentState: boolean, optimisticValue: boolean) => {
-            return optimisticValue;
-        }
-    );
+    const [optimisticLiked, setOptimisticLiked] = useOptimistic(isLiked);
 
     const submitAction = async () => {
-        startTransition(() => {
-            setOptimisticLiked(!isLiked);
-        });
+        setOptimisticLiked(!isLiked);
 
         try {
             await new Promise(resolve => setTimeout(resolve, 1000));
             if (Math.random() < 0.5) throw new Error('Failed');
+
             setIsLiked((prevState) => !prevState);
         } catch (error) {
             console.error('Like failed:', error);
@@ -26,7 +19,7 @@ const OptimisticComp = (): JSX.Element => {
 
     return (
         <div className="container">
-            <h2 className="subtitle">Click Me</h2>
+            <h2 className="subtitle">Example 1: Click Me</h2>
             <form action={submitAction}>
                 <button className="btn btn-primary" type='submit'>
                     {optimisticLiked ? '❤️ Liked' : '🤍 Like'}
@@ -36,4 +29,4 @@ const OptimisticComp = (): JSX.Element => {
     );
 };
 
-export default OptimisticComp;
+export default LikeComp;
