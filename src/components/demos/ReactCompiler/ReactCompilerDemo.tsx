@@ -13,13 +13,13 @@ const ReactCompilerDemo = () => {
     const [count, setCount] = useState(0);
 
     return (
-        <>
+        <main className="container">
             <Header />
             <div>
                 <p>{count}</p>
                 <button onClick={() => setCount(count + 1)}>Increment</button>
             </div>
-        </>
+        </main>
     );
 };
 
