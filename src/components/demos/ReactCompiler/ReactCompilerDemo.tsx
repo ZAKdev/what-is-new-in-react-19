@@ -6,7 +6,7 @@ const fibonacci = (n: number): number => {
     console.log(`🔥 Calculating fibonacci(${n})`);
     if (n <= 1) return n;
     if (fibonacciMemo[n]) return fibonacciMemo[n];
-    
+
     const result = fibonacci(n - 1) + fibonacci(n - 2);
     fibonacciMemo[n] = result;
     return result;
@@ -23,7 +23,7 @@ const ReactCompilerDemo = (): JSX.Element => {
     return (
         <div className="container">
             <h2 className="title">React Compiler Demo</h2>
-            
+
             <div className="card mb-3">
                 <h3 className="subtitle">🤖 Automatic Optimization</h3>
                 <p className="text">
@@ -44,8 +44,8 @@ const ReactCompilerDemo = (): JSX.Element => {
                         className="form-input"
                     />
                 </div>
-                
-                <button 
+
+                <button
                     onClick={() => setRerenders(prev => prev + 1)}
                     className="btn btn-secondary"
                 >
