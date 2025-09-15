@@ -13,7 +13,7 @@ const ReactCompilerDemo = () => {
     const [count, setCount] = useState(0);
 
     return (
-        <main>
+        <main className="container">
             <Header />
             <div>
                 <p>{count}</p>
