@@ -19,12 +19,6 @@ module.exports = {
           {
             loader: 'babel-loader',
           },
-          {
-            loader: 'ts-loader',
-            options: {
-              configFile: path.resolve(__dirname, 'tsconfig.json'),
-            },
-          },
         ],
         exclude: /node_modules/,
       },
