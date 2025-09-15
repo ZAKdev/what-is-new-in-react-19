@@ -17,7 +17,12 @@ const ReactCompilerDemo = () => {
             <Header />
             <div>
                 <p>{count}</p>
-                <button onClick={() => setCount(count + 1)}>Increment</button>
+                <button
+                    onClick={() => setCount(count + 1)}
+                    className="btn btn-primary"
+                >
+                    Increment
+                </button>
             </div>
         </main>
     );
