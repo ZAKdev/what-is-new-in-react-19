@@ -14,6 +14,7 @@ import PasswordChange from './components/demos/OptimisticComp/PasswordChange';
 import UsersList from './components/demos/useApi/UsersList';
 import RefsComp from './components/demos/others/RefsComp';
 import DeferredSearch from './components/demos/others/DeferredSearch';
+import ReactCompilerDemo from './components/demos/ReactCompiler/ReactCompilerDemo';
 import { DemoItem } from './types';
 import { AppContainer } from './App.styles';
 
@@ -79,6 +80,11 @@ const demoItems: DemoItem[] = [
         id: 'meta-data',
         title: 'Document Meta Data',
         component: () => <DocumentMetaData title='Hello everyone' />,
+    },
+    {
+        id: 'react-compiler',
+        title: 'React Compiler',
+        component: () => <ReactCompilerDemo />,
     },
 ];
 
