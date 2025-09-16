@@ -1,23 +1,26 @@
-import { JSX, useActionState } from 'react';
+import { JSX, useActionState } from "react";
 
 const UseActionState = (): JSX.Element => {
-
     const submitHandler = async (previousState: any, formData: any) => {
-        const username = formData.get('username');
+        const username = formData.get("username");
         if (username.length < 3) {
-            return 'Not valid username';
+            return "Not valid username";
         }
 
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
         return username;
     };
 
-    const [state, submitAction, isLoading] = useActionState(submitHandler, null);
+    const [state, submitAction, isLoading] = useActionState(
+        submitHandler,
+        null
+    );
 
     return (
         <div className="container">
             <div className="section">
                 <form action={submitAction}>
+                    <h2 className="subtitle">State Action Form</h2>
                     <div className="form-group">
                         <input
                             className="form-input"
@@ -26,8 +29,12 @@ const UseActionState = (): JSX.Element => {
                             placeholder="Enter Username"
                         />
                     </div>
-                    <button className="btn btn-primary" type="submit" disabled={isLoading}>
-                        {isLoading ? 'Submitting...' : 'Submit'}
+                    <button
+                        className="btn btn-primary"
+                        type="submit"
+                        disabled={isLoading}
+                    >
+                        {isLoading ? "Submitting..." : "Submit"}
                     </button>
                 </form>
             </div>
