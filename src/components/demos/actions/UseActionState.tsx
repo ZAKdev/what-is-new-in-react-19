@@ -7,7 +7,7 @@ const UseActionState = (): JSX.Element => {
             return "Not valid username";
         }
 
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
         return username;
     };
 

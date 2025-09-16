@@ -26,24 +26,19 @@ const demoItems: DemoItem[] = [
         component: WelcomeDemo,
     },
     {
-        id: "action",
-        title: "Simple Action",
-        component: () => <SimpleAction />,
-    },
-    {
         id: "action-state",
         title: "useActionState",
         component: () => <UseActionState />,
     },
     {
+        id: "action",
+        title: "Simple Action",
+        component: () => <SimpleAction />,
+    },
+    {
         id: "form-actions",
         title: "Form Actions",
         component: () => <FormActions />,
-    },
-    {
-        id: "preinit-demo",
-        title: "preinit()",
-        component: () => <PreinitDemo />,
     },
     {
         id: "optimistic-comp",
@@ -65,7 +60,12 @@ const demoItems: DemoItem[] = [
         ),
     },
     {
-        id: "others",
+        id: "react-compiler",
+        title: "React Compiler",
+        component: () => <ReactCompilerDemo />,
+    },
+    {
+        id: "ref",
         title: "refs function",
         component: () => (
             <div>
@@ -88,9 +88,9 @@ const demoItems: DemoItem[] = [
         component: () => <DocumentMetaData title="Hello everyone" />,
     },
     {
-        id: "react-compiler",
-        title: "React Compiler",
-        component: () => <ReactCompilerDemo />,
+        id: "pre-init",
+        title: "preinit()",
+        component: () => <PreinitDemo />,
     },
 ];
 
