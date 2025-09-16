@@ -20,7 +20,7 @@ const usersData: IUser[] = [
 export const getUserApi = new Promise<IUser[]>((resolve) =>
     setTimeout(() => {
         resolve(usersData);
-    }, 2000)
+    }, 4000)
 );
 
 export default getUserApi;
